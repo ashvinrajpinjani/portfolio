@@ -15,11 +15,120 @@
 
     <style>
     .section-sm {
-        margin-top: -200px; /* Adjust this value as needed */
+        margin-top: -50px; /* Adjust this value as needed */
     }
 </style>
+    <!-- Other head elements -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <head>
+    <!-- Other head elements -->
+
+    <!-- Font Awesome Solid -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
   </head>
 <body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add this CSS to style the popup and overlay */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 15px;
+            z-index: 1000;
+            border-radius: 10px;
+            max-width: 80%; /* Adjust the maximum width as needed */
+            margin: 0px 0;
+        }
+
+        .popup-content {
+            font-size: 14px;
+        }
+
+        .popup h2, .education-entry h3 {
+            font-size: 1em; /* Decreased the font size */
+        }
+
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .close {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Add this overlay div -->
+<div id="popupOverlay" class="popup-overlay"></div>
+
+<!-- Updated Educational Journey Popup -->
+<div id="educationalJourneyPopup" class="popup">
+    <span class="close" onclick="closeEducationalJourney()">&times;</span>
+    <div class="popup-content">
+        <h2>Educational Journey</h2>
+
+        <div class="education-entry">
+            <h3>Purdue University Krannert School of Management</h3>
+            <p><strong>Master of Science in Business Analytics and Information Management</strong></p>
+            <p><strong>GPA:</strong> 3.7/4.0</p>
+            <p><strong>July 2024</strong></p>
+            <p>Academic Honors | Merit Scholarship Recipient</p>
+            <p><strong>Technical Coursework:</strong> Analyzing Unstructured Data, Machine Learning, Data Mining, Cloud Computing, Business Analytics, Visual Analytics, Management of Organizational Data</p>
+        </div>
+
+        <div class="education-entry">
+            <h3>Lahore University of Management Sciences</h3>
+            <p><strong>Bachelor of Science, Accounting and Finance</strong></p>
+            <p><strong>May 2019</strong></p>
+            <p><strong>Relevant Coursework:</strong> Financial Derivatives, Financial Modeling, Corporate Finance, Investments, Financial Reporting, Auditing, Econometrics, Strategic Business Management, Data Driven Marketing, Computational Problem Solving</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Add this JavaScript code -->
+<script>
+    function openEducationalJourney() {
+        document.getElementById("educationalJourneyPopup").style.display = "block";
+        document.getElementById("popupOverlay").style.display = "block";
+    }
+
+    function closeEducationalJourney() {
+        document.getElementById("educationalJourneyPopup").style.display = "none";
+        document.getElementById("popupOverlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+
+
    
    <!-- Loader -->
    <div class="loader">
@@ -41,15 +150,18 @@
             <li><a class="nav-link" href="#about">About</a></li>
             <li><a class="nav-link" href="#experience">Certifications</a></li>
             <li><a class="nav-link" href="#news">Projects</a></li>
+            <li><a href="https://rk9453.github.io/test/educational_journey.html" onclick="openEducationalJourney()">Educational Journey</a></li>
                     <!-- Social
 <li><a class="nav-link" href="#testimonials">Testimonials</a></li> -->
           </ul>
 
         <!-- Social -->
-        <ul class="social-icons mr-auto mr-lg-0 d-none d-sm-block">
-           <li><a href="https://www.linkedin.com/in/ashvinraj97/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-           <li><a href="https://github.com/ashvinrajpinjani"> <ion-icon name="logo-github"></ion-icon></a></li>
-        </ul>
+<ul class="social-icons mr-auto mr-lg-0 d-none d-sm-block">
+    <li><a href="https://drive.google.com/drive/folders/1b8gKRHKTCCXs2gwfyLgdpOr08JSi9Trz?usp=drive_link"><ion-icon name="cloud-download"></ion-icon></a></li>
+    <li><a href="https://www.linkedin.com/in/ashvinraj97/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    <li><a href="https://github.com/ashvinrajpinjani"> <ion-icon name="logo-github"></ion-icon></a></li>
+</ul>
+
 
         <!-- Toggler -->
         <button class="toggler d-lg-none ml-auto">
@@ -77,6 +189,8 @@
         <li><a class="nav-link" href="#experience">Experience</a></li>
         <li><a class="nav-link" href="#projects">Projects</a></li>
         <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li><a class="nav-link" href="https://rk9453.github.io/test/educational_journey.html">Educational Journey
+</a></li>
        </ul>
        <div class="navbar-mobile-footer">
         <p>© 2024 Ashvin. All Rights Reserved.</p>
@@ -128,15 +242,92 @@
         </section>
       </div>
     </section>
+  
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <style>
+        /* Add your existing CSS styles here */
+
+        /* Add new styles for the educational journey section */
+        #educationalJourney {
+            margin: 20px 50px; /* 20px top and bottom, 50px left and right */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        #educationalJourney div {
+            margin-bottom: 20px;
+        }
+
+        #educationalJourney h2 {
+            color: ##333333;
+        }
+
+        #educationalJourney h3 {
+            color: ##333333;
+        }
+
+        #educationalJourney p {
+            color: ##333333;
+        }
+    </style>
 
 
+    <main>
+        <!-- Your existing webpage content goes here -->
+
+        <!-- Educational Journey Section -->
+        <section id="educationalJourney">
+            <h2>Educational Journey</h2>
+            <div>
+                <h3>Purdue University Krannert School of Management</h3>
+                <p><strong>Master of Science in Business Analytics and Information Management</strong></p>
+                <p><strong>GPA:</strong> 3.7/4.0</p>
+                <p><strong>July 2024</strong></p>
+                <p>Academic Honors | Merit Scholarship Recipient</p>
+                <p><strong>Technical Coursework:</strong> Analyzing Unstructured Data, Machine Learning, Data Mining, Cloud Computing, Business Analytics, Visual Analytics, Management of Organizational Data</p>
+            </div>
+
+            <div>
+                <h3>Lahore University of Management Sciences</h3>
+                <p><strong>Bachelor of Science, Accounting and Finance</strong></p>
+                <p><strong>May 2019</strong></p>
+                <p><strong>Relevant Coursework:</strong> Financial Derivatives, Financial Modeling, Corporate Finance, Investments, Financial Reporting, Auditing, Econometrics, Strategic Business Management, Data Driven Marketing, Computational Problem Solving</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Your existing footer content goes here -->
+    </footer>
+
+    <script>
+        // JavaScript functions to open and close the educational journey popup
+        function openEducationalJourney() {
+            // You can add code here to scroll to the educationalJourney section
+        }
+
+        function closeEducationalJourney() {
+            // You can add code here to close the educationalJourney section
+        }
+    </script>
+</body>
+</html>
+
+  
         <!-- Skills -->
   <section class="section-sm">
     <div class="container">
       <div class="row-partners row">
         <div class="row align-items-end">
           <div class="col-md-6"><h2 class="mb-3 mb-md-0">Skills</h2></div>
-          <div class="col-md-5 offset-md-1 text-md-right"><h6 class="my-0 text-gray"><a href="https://drive.google.com/file/d/1NjIPhY4MAsvGKzAZwz43RPfoB38xxuuk/view?usp=sharing">Download my Resume</a></h6></div>
+          <div class="col-md-5 offset-md-1 text-md-right"><h6 class="my-0 text-gray"></h6></div>
           <div class="col-partner col-md-6 col-lg-3">
             <img alt="" src="img/partners/1.png">
           </div>
@@ -199,7 +390,7 @@
         <div class="mt-5 pt-5">
           <div class="row-experience row justify-content-between" data-aos="fade-up">
             <div class="col-md-4">
-            <h5 class="mt-2 text-primary text-uppercase"><a href="https://www.google.com">Chartered Financial Analyst (CFA) Level I</a></h5>
+            <h5 class="mt-2 text-primary text-uppercase"><a href="https://basno.com/ua8qho8s">Chartered Financial Analyst (CFA) Level I</a></h5>
             </div>
             <div class="col-md-4">
               <h5 class="mb-3 mt-0 text-uppercase"> </h5> <!-- Experience -->
@@ -207,10 +398,11 @@
             <div class="col-md-4">
               <p>December 2018</p>
             </div>
-          </div>
+             </div>
+        <div>
           <div class="row-experience row justify-content-between" data-aos="fade-up">
             <div class="col-md-4">
-              <h5 class="mt-2 text-primary text-uppercase">AWS Certified Cloud Practitioner </h5>
+            <h5 class="mt-2 text-primary text-uppercase"><a href="https://www.credly.com/badges/234d316f-0d8e-4678-a8de-1d20d0d2d133/linked_in_profile">AWS CERTIFIED CLOUD PRACTITIONER</a></h5>
             </div>
             <div class="col-md-4">
               <h5 class="mb-3 mt-0 text-uppercase"> </h5> <!-- Experience -->
@@ -219,9 +411,10 @@
               <p>December 2023</p>
             </div>
           </div>
+        <div>
           <div class="row-experience row justify-content-between" data-aos="fade-up">
             <div class="col-md-4">
-              <h5 class="mt-2 text-primary text-uppercase">Microsoft Certified: Azure Fundamentals </h5>
+            <h5 class="mt-2 text-primary text-uppercase"><a href="https://www.credly.com/badges/bd5c8125-e4bf-4e07-bc41-4f17b66d5647/public_url">MICROSOFT CERTIFIED: AZURE FUNDAMENTALS</a></h5>
             </div>
             <div class="col-md-4">
               <h5 class="mb-3 mt-0 text-uppercase"> </h5> <!-- Experience -->
@@ -232,10 +425,10 @@
           </div>
           <div class="row-experience row justify-content-between" data-aos="fade-up">
             <div class="col-md-4">
-              <h5 class="mt-2 text-primary text-uppercase">Operations Research SAS Optimization </h5>
+            <h5 class="mt-2 text-primary text-uppercase"><a href="https://www.credly.com/badges/a1753930-a9f7-4bec-891f-aa23f551a0e5/public_url">OPERATIONS RESEARCH SAS OPTIMIZATION</a></h5>
             </div>
             <div class="col-md-4">
-              <h5 class="mb-3 mt-0 text-uppercase"> </h5>
+              <h5 class="mb-3 mt-0 text-uppercase"> </h5> <!-- Experience -->
             </div>
             <div class="col-md-4">
               <p>October 2023</p>
@@ -454,7 +647,14 @@
                    <!--<mark class="date">12.03.2020</mark>-->
                 </div>
                 <figcaption><h5><a href="https://github.com/ashvinrajpinjani/Craiglist-Classification-Beauty-Health-">Craiglist – Beauty & Health Classification </a></h5>Scrapped, tokenized, and lemmatized the Craigslist beauty and health section, then built Logistic Regression, SVM and LSTM models. Achieved an accuracy of 66% on test data which helped improve the customer experience and search efficiency in Craigslist.
-                </figcaption>
+              <!-- Replace this line with the provided SVG code -->
+            <div class="project-tags">
+                 <svg class="e-font-icon-svg e-fas-tags" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="width: 20px; height: 20px; margin-right: 8px;">
+                    <path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path>
+                </svg>
+                <span>Python, NLP, Machine Learning</span>
+            </div>
+        </figcaption>
               </figure>
             </div>
             <div class="col-news col-md-6 col-lg-4" data-aos="fade-in" data-aos-delay="100">
@@ -465,7 +665,14 @@
                 </div>
                 <figcaption><h5><a href="https://github.com/ashvinrajpinjani/Airbnb-Boston-Predicting-Nightly-Rate">Airbnb-Boston-Predicting-Nightly-Rate</a></h5>
                 Cleaned the data and conducted extensive exploratory data analysis (EDA). Used models like Gradient Boosting and Lasso Regression for analyzing the importance of features and interpreting coefficients to assing monetary value to features. Generated business insights.
-                </figcaption>
+                <!-- Replace this line with the provided SVG code -->
+            <div class="project-tags">
+                 <svg class="e-font-icon-svg e-fas-tags" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="width: 20px; height: 20px; margin-right: 8px;">
+                    <path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path>
+                </svg>
+                <span>Python, Machine Learning</span>
+            </div>
+        </figcaption>
               </figure>
             </div>
             <div class="col-news col-md-6 col-lg-4" data-aos="fade-in" data-aos-delay="200">
@@ -474,18 +681,33 @@
                   <a href="https://github.com/ashvinrajpinjani/Kaggle-Predicting-Firm-Bankruptcy"><img alt="" class="w-100 d-block" src="img/news/640x520-3.jpg"></a>
                    <!--<mark class="date">12.03.2020</mark>-->
                 </div>
-                <figcaption><h5><a href="https://github.com/ashvinrajpinjani/Kaggle-Predicting-Firm-Bankruptcy">Data Mining-Kaggle Competition hosted by Purdue University  </a></h5>Participated in Kaggle Competition hosted by Purdue University for predicting firm bankruptcy. Achieved a score of 0.932 (AUC) in the private leaderboard using an ensemble model of gradient boosting, neural network.
-                </figcaption>
+                <figcaption><h5><a href="https://github.com/ashvinrajpinjani/Kaggle-Predicting-Firm-Bankruptcy">Data Mining-Kaggle Competition hosted by Purdue University  </a></h5>Participated in Kaggle Competition hosted by Purdue University for predicting firm bankruptcy. Achieved a score of 0.932 (AUC) in the private leaderboard using an ensemble model of gradient boosting, neural network. Implemented innovative feature engineering techniques.
+                <!-- Replace this line with the provided SVG code -->
+            <div class="project-tags">
+                 <svg class="e-font-icon-svg e-fas-tags" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="width: 20px; height: 20px; margin-right: 8px;">
+                    <path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path>
+                </svg>
+                <span>SAS, Machine Learning, Kaggle</span>
+            </div>
+        </figcaption>
               </figure>
             </div>
             <div class="col-news col-md-6 col-lg-4" data-aos="fade-in" data-aos-delay="200">
               <figure class="position-relative">
                 <div class="position-relative">
-                  <a href="https://public.tableau.com/app/profile/ashvin.raj/viz/NBA_17063382420320/Team-Level"><img alt="" class="w-100 d-block" src="img/news/640x520-4.jpg"></a>
+                  <a href="https://github.com/ashvinrajpinjani/M5---Forecasting-_-Kaggle-Competition"><img alt="" class="w-100 d-block" src="https://res.cloudinary.com/dapa8ppf6/image/upload/v1710496749/WhatsApp_Image_2024-03-15_at_4.52.33_AM_640x520_g5xr9j.jpg"></a>
                    <!--<mark class="date">12.03.2020</mark>-->
                 </div>
-                <figcaption><h5><a href="https://public.tableau.com/app/profile/ashvin.raj/viz/NBA_17063382420320/Team-Level">Are NBA athletes overpaid? Data Story Telling </a></h5>Conducted an in-depth analysis of salaries of NBA players and their performance using Tableau which ultimately answered the question Do teams that invest more in player salaries tend to perform better on the court? 
-                </figcaption>
+                <figcaption><h5><a href="https://public.tableau.com/app/profile/ashvin.raj/viz/NBA_17063382420320/Team-Level">Forecasting daily sales for Walmart
+ Data Story Telling </a></h5>Developed a predictive model to forecast daily sales for the food category over the next 28 days. Created custom lagged and rolling sales features and employed models such as LSTM, XGBoost, and Ridge Regression, achieving a Mean Absolute Error of 0.86 with the best model. 
+                <!-- Replace this line with the provided SVG code -->
+            <div class="project-tags">
+                 <svg class="e-font-icon-svg e-fas-tags" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="width: 20px; height: 20px; margin-right: 8px;">
+                    <path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path>
+                </svg>
+                <span>Python, Machine Learning, Time Series Forecasting </span>
+            </div>
+        </figcaption>
               </figure>
             </div>
             <div class="col-news col-md-6 col-lg-4" data-aos="fade-in" data-aos-delay="200">
@@ -494,8 +716,15 @@
                   <a href="https://github.com/ashvinrajpinjani/NBA-Exploratory-Data-Analysis"><img alt="" class="w-100 d-block" src="img/news/640x520-5.jpg"></a>
                    <!--<mark class="date">12.03.2020</mark>-->
                 </div>
-                <figcaption><h5><a href="https://github.com/ashvinrajpinjani/NBA-Exploratory-Data-Analysis">Relationship between NBA players' salaries and team success </a></h5>Cleaned, integrated, manipulated, and visualized datasets to find and generate business insights. Explained and identified the factors which impact players salary and performance.
-                </figcaption>
+                <figcaption><h5><a href="https://github.com/ashvinrajpinjani/NBA-Exploratory-Data-Analysis">Relationship between NBA players' salaries and team success </a></h5>Cleaned, integrated, manipulated, and visualized datasets to find and generate business insights. Explained and identified the factors which impact players salary and performance. Performed in-depth statistical analyses.
+               <!-- Replace this line with the provided SVG code -->
+            <div class="project-tags">
+                 <svg class="e-font-icon-svg e-fas-tags" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="width: 20px; height: 20px; margin-right: 8px;">
+                    <path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path>
+                </svg>
+                <span>Python, Exploratory Data Analysis</span>
+            </div>
+        </figcaption>
               </figure>
             </div>
             <div class="col-news col-md-6 col-lg-4" data-aos="fade-in" data-aos-delay="200">
@@ -504,8 +733,15 @@
                   <a href="https://drive.google.com/drive/folders/1fmsU9zrFjFf95Fhvt1RvL6fuaqTB9X_e?usp=drive_link"><img alt="" class="w-100 d-block" src="img/news/640x520-6.jpg"></a>
                    <!--<mark class="date">12.03.2020</mark>-->
                 </div>
-                <figcaption><h5><a href="https://drive.google.com/drive/folders/1fmsU9zrFjFf95Fhvt1RvL6fuaqTB9X_e?usp=drive_link">Optimized database for ASP OL Media </a></h5>Created an optimized database for ASP OL Media. Designed the ER diagram, performed normalization and then used MYSQL to unearth business insights and generate recommendations that could improve campaign performance
-                </figcaption>
+                <figcaption><h5><a href="https://drive.google.com/drive/folders/1fmsU9zrFjFf95Fhvt1RvL6fuaqTB9X_e?usp=drive_link">Optimized database for ASP OL Media </a></h5>Created an optimized database for ASP OL Media. Designed the ER diagram, performed normalization and then used MYSQL to unearth business insights and generate recommendations that could improve campaign performance performance in Depth.
+                <!-- Replace this line with the provided SVG code -->
+            <div class="project-tags">
+                 <svg class="e-font-icon-svg e-fas-tags" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" style="width: 20px; height: 20px; margin-right: 8px;">
+                    <path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path>
+                </svg>
+                <span>SQL, Database</span>
+            </div>
+        </figcaption>
               </figure>
             </div>
          </div>
@@ -528,24 +764,12 @@
              <p class="text-white mb-4">raj53@purdue.edu</p>
             </div>
             <div class="col-md-6 col-lg-3">
-              <h6 class="text-white mb-4">Follow me:</h6>
+              <h6 class="text-white mb-4">Contact me:</h6>
               <ul class="social-icons">
-             <li><a href="https://www.facebook.com/ashvin.raj.5243"><ion-icon name="logo-facebook"></ion-icon></a></li>
+             <li><a href="https://drive.google.com/drive/folders/1b8gKRHKTCCXs2gwfyLgdpOr08JSi9Trz?usp=drive_link"><ion-icon name="cloud-download"></ion-icon></a></li>
            <li><a href="https://www.linkedin.com/in/ashvinraj97/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
            <li><a href="https://github.com/ashvinrajpinjani"> <ion-icon name="logo-github"></ion-icon></a></li>
             </ul>
-            </div>
-            <div class="col-md-6 col-lg-3">
-              <h6 class="text-white mb-4">Subscribe:</h6>
-              <form class="js-subscribe-form">
-                <div class="input-group">
-                  <input id="mc-email" type="email" class="form-control" placeholder="Email">
-                  <div class="input-group-append">
-                    <button class="btn" type="submit">Go</button>
-                  </div>
-                </div>
-                <label class="mc-label" for="mc-email" id="mc-notification"></label>
-              </form>
             </div>
           </div>
         </div>

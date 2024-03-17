@@ -1150,7 +1150,8 @@ ion-icon{
 }
 
 .row-experience:nth-child(even){
-  background: #f4f4f4;
+  background: #FFFFFF;
+  background: #FFFFFF;
   border-color:transparent;
 }
 
@@ -1578,3 +1579,32 @@ footer .social-icons ion-icon{
   display: none;
   color:#23a592;
 }
+
+<style>
+    /* Add your existing CSS styles here */
+
+    /* Add new styles for the educational journey section */
+    #educationalJourney {
+        margin: 20px 50px; /* 20px top and bottom, 50px left and right */
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    #educationalJourney div {
+        margin-bottom: 20px;
+    }
+
+    #educationalJourney h2 {
+        color: #333333;
+    }
+
+    #educationalJourney h3 {
+        color: #333;
+    }
+
+    #educationalJourney p {
+        color: #555;
+    }
+</style>
+
