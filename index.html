@@ -325,7 +325,15 @@
       <div class="container">
         <div class="row align-items-end">
           <div class="col-md-6" data-aos="fade-up"><h2 class="mb-3 mb-md-0">Certifications</h2></div>
-          <div class="col-md-5 offset-md-1 text-md-right"><h6 class="my-0 text-gray"><a href="https://drive.google.com/file/d/1NjIPhY4MAsvGKzAZwz43RPfoB38xxuuk/view?usp=sharing">Download my Resume</a></h6></div>
+          <div class="col-md-5 offset-md-1 text-md-right"><h6 class="my-0 text-gray"><a id="resumeLink" href="https://drive.google.com/file/d/1NjIPhY4MAsvGKzAZwz43RPfoB38xxuuk/view?usp=sharing" onclick="return openInSameTab()">Download my Resume</a>
+
+<script>
+  function openInSameTab() {
+    window.location.href = document.getElementById('resumeLink').href;
+    return false; // Prevents the default behavior of the link
+  }
+</script>
+</h6></div>
         </div>
         <div class="mt-5 pt-5">
           <div class="row-experience row justify-content-between" data-aos="fade-up">
