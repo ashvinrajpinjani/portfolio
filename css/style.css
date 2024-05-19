@@ -1093,6 +1093,19 @@ ion-icon{
     width: 100%;
     height: 100%;
     z-index: -1;
+background-position: 70% 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://ashvinrajpinjani.github.io/portfolio/img/bg/personal.jpg);
+    position: absolute;
+    top: 63px;
+    left: -60px;
+    width: 620px;
+    height: 579.066px;
+    overflow: hidden;
+    pointer-events: none;
+    margin-top: -108.0332px;
+    transform: translate3d(0px, 86.0332px, 0px);
 }
 
 
