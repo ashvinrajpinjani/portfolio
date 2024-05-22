@@ -1822,26 +1822,31 @@ html {
 
 .st-resume-timeline .st-resume-timeline-title {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 600;
   color: #23a592;
   margin-top: -7px;
   margin-bottom: 8px;
 }
 
 .st-resume-timeline .st-resume-timeline-duration {
-  font-size: 18px;
-  margin-bottom: 21px;
+  font-size: 20px;
+    margin-bottom: 17px;
+    margin-top: 28px;
+    color: black;
 }
 
 .st-resume-timeline .st-resume-timeline-subtitle {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 19px;
+  font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 19px;
+    color: black;
 }
 
 .st-resume-timeline .st-resume-timeline-text p {
-  margin: 0;
-  margin-bottom: -7px;
+     margin-top: 27px;
+    margin-bottom: -7px;
+    color: black;
+    font-size: 15px;
 }
 
 .st-resume-timeline-wrap {
