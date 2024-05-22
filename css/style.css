@@ -53,6 +53,17 @@
 @import url('owl.carousel.min.css');
 
 
+body,
+html {
+  color: #a9adb8;
+  background-color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6em;
+  overflow-x: hidden;
+}
+
 
 html{
   -webkit-font-smoothing: antialiased;
