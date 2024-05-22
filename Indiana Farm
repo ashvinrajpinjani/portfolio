@@ -267,51 +267,6 @@ Currently, I'm diving deep into the fascinating realm of Master of Science in Bu
 <body>
     <main>
 
-
-
-
-        <!-- Education -->
-        <div class="col-lg-6">
-
-          <div class="st-height-b0 st-height-lg-b50"></div>
-          <div class="st-resume-wrap">
-            <div class="st-resume-heading">
-            
-              <h2 class="st-resume-heading-title"><br>Educational Journey</h2>
-            </div>
-            <div class="st-height-b50 st-height-lg-b30"></div>
-
-            <div class="st-resume-timeline-wrap">
-              <div class="st-resume-timeline">
-                <h3 class="st-resume-timeline-title">Purdue University, Daniels School of Business - West Lafayette, IN</h3>
-                <div class="st-resume-timeline-duration">July 2024</div>
-                 <div class="st-resume-timeline-duration">GPA: 3.7/4.0 </div>
-                <h4 class="st-resume-timeline-subtitle">Master of Science in Business Analytics and Information Management</h4>
-                <div class="st-resume-timeline-text">
-                  <p><b>Academic Honors|</b> Merit Scholarship Recipient</p>
-                  <p><b>Technical Coursework:</b> Analyzing Unstructured Data, Machine Learning, Visual Analytics, Data Mining, Cloud Computing, Data Management</p>
-                </div>
-              </div> <!-- st-resume-timeline -->
-              <div class="st-height-b50 st-height-lg-b30"></div>
-              <div class="st-resume-timeline">
-                <h3 class="st-resume-timeline-title">Lahore University of Management Sciences Lahore, Pakistan</h3>
-                <div class="st-resume-timeline-duration">May 2019</div>
-                <h4 class="st-resume-timeline-subtitle">BSc (Honors) in Accounting and Finance</h4>
-                <div class="st-resume-timeline-text">
-                 <p><b>Relevant Coursework:</b> Corporate Finance, Investments, Financial Derivatives, Financial Modeling, Econometrics, Probability, Statistics</p>
-                </div>
-            
-              </div> <!-- st-resume-timeline -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="st-height-b100 st-height-lg-b80"></div>
-  </section>
-
-
-
 <div class="col-lg-6">
           <div class="st-resume-wrap">
             <div class="st-resume-heading">
@@ -370,6 +325,51 @@ Currently, I'm diving deep into the fascinating realm of Master of Science in Bu
                   
          
                 </div>
+
+
+        <!-- Education -->
+        <div class="col-lg-6">
+
+          <div class="st-height-b0 st-height-lg-b50"></div>
+          <div class="st-resume-wrap">
+            <div class="st-resume-heading">
+            
+              <h2 class="st-resume-heading-title"><br>Educational Journey</h2>
+            </div>
+            <div class="st-height-b50 st-height-lg-b30"></div>
+
+            <div class="st-resume-timeline-wrap">
+              <div class="st-resume-timeline">
+                <h3 class="st-resume-timeline-title">Purdue University, Daniels School of Business - West Lafayette, IN</h3>
+                <div class="st-resume-timeline-duration">July 2024</div>
+                 <div class="st-resume-timeline-duration">GPA: 3.7/4.0 </div>
+                <h4 class="st-resume-timeline-subtitle">Master of Science in Business Analytics and Information Management</h4>
+                <div class="st-resume-timeline-text">
+                  <p><b>Academic Honors|</b> Merit Scholarship Recipient</p>
+                  <p><b>Technical Coursework:</b> Analyzing Unstructured Data, Machine Learning, Visual Analytics, Data Mining, Cloud Computing, Data Management</p>
+                </div>
+              </div> <!-- st-resume-timeline -->
+              <div class="st-height-b50 st-height-lg-b30"></div>
+              <div class="st-resume-timeline">
+                <h3 class="st-resume-timeline-title">Lahore University of Management Sciences Lahore, Pakistan</h3>
+                <div class="st-resume-timeline-duration">May 2019</div>
+                <h4 class="st-resume-timeline-subtitle">BSc (Honors) in Accounting and Finance</h4>
+                <div class="st-resume-timeline-text">
+                 <p><b>Relevant Coursework:</b> Corporate Finance, Investments, Financial Derivatives, Financial Modeling, Econometrics, Probability, Statistics</p>
+                </div>
+            
+              </div> <!-- st-resume-timeline -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="st-height-b100 st-height-lg-b80"></div>
+  </section>
+
+
+
+
 
 
                 
